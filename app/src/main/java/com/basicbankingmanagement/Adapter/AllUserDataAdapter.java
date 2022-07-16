@@ -13,11 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.basicbankingmanagement.Activity.AllUserList;
 import com.basicbankingmanagement.Activity.SingleUserDataActivity;
 import com.basicbankingmanagement.Model.UserModel;
-import  com.basicbankingmanagement.R;
+import com.basicbankingmanagement.R;
 
 import java.util.ArrayList;
 
-public class AllUserDataAdapter  extends RecyclerView.Adapter<AllUserDataAdapter.ViewHolder>  {
+public class AllUserDataAdapter extends RecyclerView.Adapter<AllUserDataAdapter.ViewHolder> {
     Context context;
     ArrayList<UserModel> arr;
 
@@ -39,7 +39,7 @@ public class AllUserDataAdapter  extends RecyclerView.Adapter<AllUserDataAdapter
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.name.setText(arr.get(position).getName());
         holder.number.setText(arr.get(position).getAccount());
-        holder.amount.setText (arr.get(position).getBalance());
+        holder.amount.setText(arr.get(position).getBalance());
 
     }
 
@@ -62,10 +62,10 @@ public class AllUserDataAdapter  extends RecyclerView.Adapter<AllUserDataAdapter
 
                     Intent intent = new Intent(view.getContext(), SingleUserDataActivity.class);
                     intent.putExtra("username", name.getText());
-                    intent.putExtra(  "usernumber" ,  number.getText());
-                    intent.putExtra("useramount" , amount.getText());
+                    intent.putExtra("usernumber", number.getText());
+                    intent.putExtra("useramount", amount.getText());
 //                    view.getContext().startActivity(intent);
-                    ((AllUserList)context).startActivity(intent);
+                    ((AllUserList) context).startActivity(intent);
                     ((AllUserList) context).finish();
 
 

@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,7 +14,7 @@ import com.basicbankingmanagement.R;
 
 import java.util.ArrayList;
 
-public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHolder>{
+public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHolder> {
     Context context;
     ArrayList<HistoryModel> sendList;
 
@@ -27,7 +26,7 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(context).inflate(R.layout.history_card,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.history_card, parent, false);
         return new ViewHolder(view);
     }
 
@@ -53,7 +52,8 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView time,amount, touser,fromuser;
+        TextView time, amount, touser, fromuser;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             time = itemView.findViewById(R.id.historytime);

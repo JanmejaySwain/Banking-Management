@@ -9,7 +9,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/purple_200"
+        app:cardBackgroundColor="#F6F6F6"
         app:cardCornerRadius="20dp"
         app:cardElevation="10dp"
         >
@@ -30,7 +30,9 @@
                     android:layout_height="150dp"
                     android:layout_margin="60dp"
                     android:src="@drawable/user_image" />
+
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,7 +51,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Name : "
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        />
 
                     <TextView
                         android:id="@+id/singlename"
@@ -88,6 +91,47 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Phone : "
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/phonenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8763055411"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IFSC code : "
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SBIN006869"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:text="Balance : "
                         android:textStyle="bold" />
 
@@ -108,17 +152,20 @@
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="255dp"
+        android:layout_height="55dp"
+        app:cardCornerRadius="15dp">
+
         <Button
-            android:layout_marginTop="10dp"
             android:id="@+id/send_button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="#9C00DD"
+            android:backgroundTint="#ECEDEC"
             android:drawableEnd="@drawable/arrow"
-            android:text="Send"/>
+            android:text="Send"
+            android:textColor="@color/black"/>
     </androidx.cardview.widget.CardView>
 
 

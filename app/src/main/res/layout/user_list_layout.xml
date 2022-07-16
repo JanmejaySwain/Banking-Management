@@ -6,12 +6,13 @@
     android:layout_marginStart="10dp"
     android:layout_marginTop="5dp"
     android:layout_marginEnd="10dp"
-    android:gravity="center">
+    android:gravity="center"
+    >
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#C5CD76"
+        android:backgroundTint="#D8D255"
         android:elevation="15dp"
         app:cardCornerRadius="15dp"
 

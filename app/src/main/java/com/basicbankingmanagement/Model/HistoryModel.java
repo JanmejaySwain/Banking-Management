@@ -1,22 +1,19 @@
 package com.basicbankingmanagement.Model;
 
 
-import com.basicbankingmanagement.Adapter.HistoryAdapter;
-
-import javax.net.ssl.SSLContext;
-
 public class HistoryModel {
     private String time;
     private String user1;
     private String user2;
     private String isSucess;
     private String amount;
-    public HistoryModel(String t , String u1 , String u2 , String a, String s){
+
+    public HistoryModel(String t, String u1, String u2, String a, String s) {
         time = t;
         user1 = u1;
         user2 = u2;
         amount = s;
-        isSucess  = a;
+        isSucess = a;
 
 
     }
@@ -38,10 +35,6 @@ public class HistoryModel {
         return user2;
     }
 
-
-    public String getIsSucess() {
-        return isSucess;
-    }
 
 
     public String getAmount() {
